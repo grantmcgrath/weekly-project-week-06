@@ -17,11 +17,13 @@
   },
   "homepage": "https://github.com/grantmcgrath/weekly-project-week-06#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "express-handlebars": "^3.0.0",
     "express-session": "^1.15.5",
     "express-validator": "^3.2.1",
-    "mongoose": "^4.11.7"
+    "mongoose": "^4.11.7",
+    "passport": "^0.4.0"
   }
 }
