@@ -3,13 +3,13 @@ const Schema = mongoose.Schema;
 const bcrypt = require("bcryptjs");
 
 const usersSchema = new Schema({
-  username: {type: Strinng, required: true, unique: true},
+  username: {type: String, required: true, unique: true},
   name: {type: String, required: true},
   email: {type: String, required: true},
   hash: {type: String}
 });
 
-const User = mongoose.mobel("User", usersSchema);
+const User = mongoose.model("User", usersSchema);
 
 usersSchema.methods.setPassword = function(password) {
   this.hash = bcrypt.hashSync(password, 10);

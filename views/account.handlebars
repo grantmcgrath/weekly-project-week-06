@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Account</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+  <header>
+
+  </header>
+
+  <section class="border">
+    <form class="login" action="/login" method="post">
+      <input type="text" name="username" placeholder="Username">
+      <input type="password" name="password" placeholder="Password">
+      <button>Login</button>
+    </form>
+  </section>
+
+  <section>
+    {{#if failed}}
+      <p>Login Failed.</p>
+      <a href="/register">Create Account</a>
+    {{/if}}
+  </section>
+
+</body>
+
+</html>

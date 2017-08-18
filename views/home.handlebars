@@ -9,6 +9,29 @@
 
 <body>
 
+  <header>
+    <h1>Snippet Good!</h1>
+    <div>
+      <form action="/search" method="get">
+        <input type="text" name="searchSnippets">
+        <button>Search</button>
+      </form>
+    </div>
+    <a href="/logout">Logout</a>
+  </header>
+
+  <section>
+    {{#snippets}}
+      <a href="/snippets/createCode?id={{ _id }}">
+        <p>{{title}}</p>
+      </a>
+    {{/snippets}}
+    <form action="/snippets/createCode" method="get">
+      <button name="createCode"> Create Snippet </button>
+    </form>
+  </section>
+
+
 </body>
 
 </html>
